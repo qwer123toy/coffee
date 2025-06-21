@@ -1,4 +1,4 @@
-# J's Coffee ☕
+# J's Coffee 
 
 **브랜드형 카페 웹사이트** - 따뜻한 커피 문화를 전하는 프리미엄 카페 브랜드
 
@@ -124,14 +124,6 @@ coffee/
 - **Intersection Observer** : 스크롤 애니메이션
 - **Promise** : 비동기 이미지 로딩
 - **Event Delegation** : 효율적 이벤트 처리
-
-![Coffee](https ://img.shields.io/badge/Coffee-☕-brown)
-![Version](https ://img.shields.io/badge/Version-1.0.0-blue)
-![HTML](https ://img.shields.io/badge/HTML-5-orange)
-![CSS](https ://img.shields.io/badge/CSS-3-blue)
-![JavaScript](https ://img.shields.io/badge/JavaScript-ES6-yellow)
-![JSP](https ://img.shields.io/badge/JSP-Java-red)
-
 
 ##  라이선스
 
