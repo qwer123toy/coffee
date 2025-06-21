@@ -1,6 +1,7 @@
 # J's Coffee 
 
 **브랜드형 카페 웹사이트** - 따뜻한 커피 문화를 전하는 프리미엄 카페 브랜드
+![image](https://github.com/user-attachments/assets/e1f1d6cc-4fbb-4d19-93a3-ff116b35af83)
 
 
 ##  프로젝트 소개
