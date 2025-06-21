@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원두이야기 - J's Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">J's Coffee</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">홈</a></li>
+                    <li class="nav-item"><a href="brand.html" class="nav-link">브랜드소개</a></li>
+                    <li class="nav-item"><a href="beans.html" class="nav-link active">원두이야기</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">메뉴</a></li>
+                    <li class="nav-item"><a href="locations.html" class="nav-link">매장안내</a></li>
+                    <li class="nav-item"><a href="event.html" class="nav-link">이벤트</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">고객문의</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="section hero-section">
+            <div class="container">
+                <h1 class="page-title">원두 이야기</h1>
+                <p class="section-subtitle">세계 최고의 원두를 엄선하여 완벽한 한 잔을 만들어갑니다</p>
+            </div>
+        </section>
+
+        <!-- Bean Origin Story -->
+        <section class="section">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-content">
+                        <h2 class="section-title">원두 여행의 시작</h2>
+                        <p class="story-text">
+                            J's Coffee는 세계 각지의 커피 농장을 직접 방문하여 최고 품질의 원두만을 선별합니다.
+                            에티오피아의 고원지대부터 콜롬비아의 안데스 산맥, 브라질의 광활한 농장까지,
+                            각 지역의 독특한 기후와 토양이 만들어내는 특별한 맛을 찾아 떠나는 여행입니다.
+                        </p>
+                        <p class="story-text">
+                            농부들과의 직접적인 관계를 통해 지속 가능한 농업을 지원하고,
+                            공정한 가격으로 거래하여 더 나은 커피 생태계를 만들어가고 있습니다.
+                        </p>
+                    </div>
+                    <div class="story-image" data-image="images/premium-beans.png" style="background: linear-gradient(135deg, #8B4513, #D2B48C); border-radius: 12px; min-height: 300px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Beans Collection -->
+        <section class="section" style="background-color: var(--beige);">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">프리미엄 원두 컬렉션</h2>
+                
+                <div class="premium-beans-grid">
+                    <div class="premium-bean-card">
+                        <div class="bean-image-large" data-image="images/ethiopia-beans.png" style="background: linear-gradient(135deg, #8B4513, #A0522D); border-radius: 16px; height: 250px; margin-bottom: 1.5rem;"></div>
+                        <div class="bean-details">
+                            <div class="bean-header">
+                                <h3 class="bean-name">에티오피아 시다모</h3>
+                                <span class="bean-grade">Grade A+</span>
+                            </div>
+                            <p class="bean-origin">Origin: 에티오피아 시다모 지역</p>
+                            <p class="bean-elevation">해발: 1,400~2,000m</p>
+                            
+                            <div class="bean-description">
+                                <p>커피의 원산지 에티오피아에서 온 시다모 원두는 와인과 같은 깊은 산미와 
+                                   달콤한 꽃향이 특징입니다. 복숭아, 베리류의 과일향과 
+                                   다크 초콜릿의 풍미가 조화롭게 어우러져 우아하고 세련된 맛을 선사합니다.</p>
+                            </div>
+                            
+                            <div class="bean-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">블렌딩 비율</span>
+                                    <span class="spec-value">40%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">로스팅</span>
+                                    <span class="spec-value">Medium</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">가공방식</span>
+                                    <span class="spec-value">Natural</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="premium-bean-card">
+                        <div class="bean-image-large" data-image="images/colombia-beans.png" style="background: linear-gradient(135deg, #654321, #8B4513); border-radius: 16px; height: 250px; margin-bottom: 1.5rem;"></div>
+                        <div class="bean-details">
+                            <div class="bean-header">
+                                <h3 class="bean-name">콜롬비아 수프리모</h3>
+                                <span class="bean-grade">Grade A+</span>
+                            </div>
+                            <p class="bean-origin">Origin: 콜롬비아 안데스 산맥</p>
+                            <p class="bean-elevation">해발: 1,200~1,800m</p>
+                            
+                            <div class="bean-description">
+                                <p>안데스 산맥의 비옥한 화산토에서 자란 수프리모 원두는 
+                                   균형잡힌 바디감과 은은한 단맛이 매력적입니다. 
+                                   견과류의 고소함과 캐러멜의 달콤함이 어우러져 
+                                   부드럽고 깊은 여운을 남깁니다.</p>
+                            </div>
+                            
+                            <div class="bean-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">블렌딩 비율</span>
+                                    <span class="spec-value">35%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">로스팅</span>
+                                    <span class="spec-value">Medium-Dark</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">가공방식</span>
+                                    <span class="spec-value">Washed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="premium-bean-card">
+                        <div class="bean-image-large" data-image="images/brazil-beans.png" style="background: linear-gradient(135deg, #D2B48C, #DEB887); border-radius: 16px; height: 250px; margin-bottom: 1.5rem;"></div>
+                        <div class="bean-details">
+                            <div class="bean-header">
+                                <h3 class="bean-name">브라질 산토스</h3>
+                                <span class="bean-grade">Grade A</span>
+                            </div>
+                            <p class="bean-origin">Origin: 브라질 상파울루</p>
+                            <p class="bean-elevation">해발: 800~1,200m</p>
+                            
+                            <div class="bean-description">
+                                <p>브라질의 대표적인 항구 도시 산토스에서 출하되는 클래식한 원두로, 
+                                   부드럽고 깔끔한 맛이 특징입니다. 낮은 산미와 적당한 바디감으로 
+                                   블렌딩의 기본이 되며, 초콜릿과 견과류의 고소한 풍미가 일품입니다.</p>
+                            </div>
+                            
+                            <div class="bean-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">블렌딩 비율</span>
+                                    <span class="spec-value">25%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">로스팅</span>
+                                    <span class="spec-value">Medium</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">가공방식</span>
+                                    <span class="spec-value">Natural</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flavor Profile -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center;">J's Coffee 시그니처 블렌드 풍미 프로필</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 3rem;">세 가지 프리미엄 원두의 완벽한 조화</p>
+                
+                <div class="flavor-analysis">
+                    <div class="flavor-chart-container">
+                        <h3 class="chart-title">맛의 균형</h3>
+                        <div class="flavor-chart">
+                            <div class="flavor-item">
+                                <label>산미 (Acidity)</label>
+                                <div class="flavor-bar">
+                                    <div class="flavor-fill" style="width: 70%; background: linear-gradient(90deg, #FF6B6B, #FF8E8E);"></div>
+                                </div>
+                                <span class="flavor-value">7.0</span>
+                            </div>
+                            <div class="flavor-item">
+                                <label>바디감 (Body)</label>
+                                <div class="flavor-bar">
+                                    <div class="flavor-fill" style="width: 85%; background: linear-gradient(90deg, #4ECDC4, #7BDDD8);"></div>
+                                </div>
+                                <span class="flavor-value">8.5</span>
+                            </div>
+                            <div class="flavor-item">
+                                <label>단맛 (Sweetness)</label>
+                                <div class="flavor-bar">
+                                    <div class="flavor-fill" style="width: 75%; background: linear-gradient(90deg, #FFD93D, #FFE066);"></div>
+                                </div>
+                                <span class="flavor-value">7.5</span>
+                            </div>
+                            <div class="flavor-item">
+                                <label>향 (Aroma)</label>
+                                <div class="flavor-bar">
+                                    <div class="flavor-fill" style="width: 90%; background: linear-gradient(90deg, #A8E6CF, #C7F0DB);"></div>
+                                </div>
+                                <span class="flavor-value">9.0</span>
+                            </div>
+                            <div class="flavor-item">
+                                <label>쓴맛 (Bitterness)</label>
+                                <div class="flavor-bar">
+                                    <div class="flavor-fill" style="width: 60%; background: linear-gradient(90deg, #8B4513, #A0522D);"></div>
+                                </div>
+                                <span class="flavor-value">6.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavor-notes">
+                        <h3 class="notes-title">테이스팅 노트</h3>
+                        <div class="notes-grid">
+                            <div class="note-category">
+                                <h4>향미 (Flavor)</h4>
+                                <ul>
+                                    <li>다크 초콜릿</li>
+                                    <li>캐러멜</li>
+                                    <li>견과류</li>
+                                    <li>베리류</li>
+                                </ul>
+                            </div>
+                            <div class="note-category">
+                                <h4>아로마 (Aroma)</h4>
+                                <ul>
+                                    <li>꽃향</li>
+                                    <li>과일향</li>
+                                    <li>로스팅 향</li>
+                                    <li>스파이시</li>
+                                </ul>
+                            </div>
+                            <div class="note-category">
+                                <h4>후미 (Aftertaste)</h4>
+                                <ul>
+                                    <li>달콤한 여운</li>
+                                    <li>깔끔한 마무리</li>
+                                    <li>부드러운 텍스처</li>
+                                    <li>긴 지속성</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roasting Process -->
+        <section class="section" style="background-color: var(--beige);">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center;">로스팅 마스터리</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 3rem;">20년 경력의 로스팅 마스터가 만들어내는 완벽한 한 잔</p>
+                
+                <div class="roasting-process">
+                    <div class="process-step">
+                        <div class="step-visual" style="background: linear-gradient(135deg, #8B4513, #A0522D); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">1</div>
+                        <div class="step-content">
+                            <h3>프리미엄 생두 선별</h3>
+                            <p>최고 품질의 생두만을 엄선하여 결점두를 완전히 제거합니다. 크기, 색상, 모양을 꼼꼼히 검사하여 완벽한 원두만을 선별합니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-visual" style="background: linear-gradient(135deg, #A0522D, #CD853F); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">2</div>
+                        <div class="step-content">
+                            <h3>정밀 로스팅</h3>
+                            <p>원두별 특성에 맞는 최적의 온도와 시간으로 로스팅합니다. 1차 크랙과 2차 크랙 사이의 완벽한 포인트를 찾아 원두 본연의 풍미를 극대화합니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-visual" style="background: linear-gradient(135deg, #CD853F, #DEB887); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">3</div>
+                        <div class="step-content">
+                            <h3>급속 냉각</h3>
+                            <p>로스팅 직후 특수 냉각 시스템으로 원두를 빠르게 냉각시켜 과도한 로스팅을 방지하고 최적의 상태를 유지합니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-visual" style="background: linear-gradient(135deg, #DEB887, #F5DEB3); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; color: #8B4513; font-size: 2rem; font-weight: bold;">4</div>
+                        <div class="step-content">
+                            <h3>숙성 & 품질 검증</h3>
+                            <p>24시간 숙성 과정을 거쳐 원두의 맛이 안정화되면, 전문 바리스타의 커핑 테스트를 통해 최종 품질을 검증합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality Promise -->
+        <section class="section">
+            <div class="container">
+                <div class="quality-promise">
+                    <div class="promise-content">
+                        <h2 class="section-title">J's Coffee의 품질 약속</h2>
+                        <div class="promise-text">
+                            <p>우리는 단순히 커피를 판매하는 것이 아니라, 한 잔의 커피를 통해 특별한 경험을 선사합니다.</p>
+                            <p>농장에서 컵까지, 모든 과정에서 타협하지 않는 품질 관리를 통해 언제나 최고의 맛을 보장합니다.</p>
+                        </div>
+                        <div class="promise-features">
+                            <div class="feature-item">
+                                <h4>신선함 보장</h4>
+                                <p>로스팅 후 48시간 이내에만 판매</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>원산지 투명성</h4>
+                                <p>모든 원두의 농장과 가공 과정 공개</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>지속가능성</h4>
+                                <p>공정무역과 친환경 농법 지원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promise-image" data-image="images/expert-roasting.png" style="background: linear-gradient(135deg, #8B4513, #D2B48C); border-radius: 12px; min-height: 400px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">J's Coffee</h3>
+                    <p class="footer-description">한 잔의 커피로 전하는 따뜻한 마음</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">메뉴</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="brand.html">브랜드소개</a></li>
+                        <li><a href="beans.html">원두이야기</a></li>
+                        <li><a href="menu.html">메뉴</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="locations.html">매장안내</a></li>
+                        <li><a href="event.html">이벤트</a></li>
+                        <li><a href="contact.html">고객문의</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 J's Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

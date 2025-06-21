@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J's Coffee - 프리미엄 카페</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="J's Coffee" class="logo-img" style="display: none;">
+                        <span class="logo-text">J's Coffee</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="brand.html" class="nav-link">브랜드소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="beans.html" class="nav-link">원두이야기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">메뉴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">매장안내</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="event.html" class="nav-link">이벤트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">고객문의</a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-slider">
+        <div class="slide active" data-bg="images/hero-bg-1.png">
+            <div class="slide-overlay"></div>
+        </div>
+        <div class="slide" data-bg="images/hero-bg-2.png">
+            <div class="slide-overlay"></div>
+        </div>
+        <div class="slide" data-bg="images/hero-bg-3.png">
+            <div class="slide-overlay"></div>
+        </div>
+        <div class="slide" data-bg="images/hero-bg-4.png">
+            <div class="slide-overlay"></div>
+        </div>
+        <div class="slide" data-bg="images/hero-bg-5.png">
+            <div class="slide-overlay"></div>
+        </div>
+    </div>
+    <div class="hero-content">
+        <h1>따뜻한 한 잔의 감동</h1>
+        <p>정성스럽게 선별한 프리미엄 원두로 만드는 특별한 커피 경험</p>
+        <div class="hero-buttons">
+            <a href="menu.html" class="btn btn-primary">메뉴 보기</a>
+            <a href="locations.html" class="btn btn-outline">매장 찾기</a>
+        </div>
+    </div>
+    <div class="slider-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+        <span class="indicator" data-slide="3"></span>
+        <span class="indicator" data-slide="4"></span>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">J's Coffee만의 특별함</h2>
+<parameter name="section-subtitle">우리는 최고의 원두와 정성으로 완벽한 한 잔을 만들어갑니다</p>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-image" data-image="images/premium-beans.png" style="background: linear-gradient(45deg, #8B4513, #D2B48C); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                <div class="card-content">
+                    <h3 class="card-title">프리미엄 원두</h3>
+                    <p class="card-text">에티오피아와 콜롬비아의 고품질 원두만을 엄선하여 최상의 맛을 선사합니다.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image" data-image="images/expert-roasting.png" style="background: linear-gradient(45deg, #A0522D, #D2B48C); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                <div class="card-content">
+                    <h3 class="card-title">전문 로스팅</h3>
+                    <p class="card-text">20년 경력의 로스터가 직접 관리하는 정교한 로스팅으로 깊은 맛을 구현합니다.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image" data-image="images/cozy-interior.png" style="background: linear-gradient(45deg, #654321, #D2B48C); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                <div class="card-content">
+                    <h3 class="card-title">따뜻한 공간</h3>
+                    <p class="card-text">편안하고 아늑한 인테리어로 소중한 사람들과의 시간을 더욱 특별하게 만들어드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Menu Section -->
+<section class="section" style="background-color: var(--beige);">
+    <div class="container">
+        <h2 class="section-title">인기 메뉴</h2>
+        <p class="section-subtitle">고객들이 가장 사랑하는 메뉴를 만나보세요</p>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-image" data-image="images/americano.png" style="background: linear-gradient(135deg, #8B4513, #A0522D); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem;"></div>
+                <div class="card-content">
+                    <h3 class="card-title">시그니처 아메리카노 <span class="menu-tag">BEST</span></h3>
+                    <p class="card-text">J's Coffee의 대표 메뉴로, 깊고 진한 맛이 일품인 프리미엄 아메리카노입니다.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image" data-image="images/vanilla-latte.png" style="background: linear-gradient(135deg, #D2B48C, #F5F5DC); display: flex; align-items: center; justify-content: center; color: #8B4513; font-size: 1.1rem;"></div>
+                <div class="card-content">
+                    <h3 class="card-title">바닐라 라떼 <span class="menu-tag">NEW</span></h3>
+                    <p class="card-text">부드러운 우유와 달콤한 바닐라의 조화로 만드는 인기 라떼입니다.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image" data-image="images/croissant.png" style="background: linear-gradient(135deg, #DEB887, #F5DEB3); display: flex; align-items: center; justify-content: center; color: #8B4513; font-size: 1.1rem;"></div>
+                <div class="card-content">
+                    <h3 class="card-title">버터 크루아상</h3>
+                    <p class="card-text">매일 아침 갓 구워내는 바삭하고 고소한 프랑스식 크루아상입니다.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="menu.html" class="btn btn-outline" style="color: var(--accent-color); border-color: var(--accent-color);">전체 메뉴 보기</a>
+        </div>
+    </div>
+</section>
+
+<!-- Store Location Preview -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">매장 안내</h2>
+        <p class="section-subtitle">전국 주요 도시에서 J's Coffee를 만나보세요</p>
+        
+        <div class="location-grid">
+            <div class="location-card">
+                <div class="location-image" data-image="images/store-gangnam.png" style="background: linear-gradient(45deg, #8B4513, #D2B48C); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                <div class="location-info">
+                    <h3 class="location-name">강남점</h3>
+                    <div class="location-details">
+                        <p><strong>주소:</strong> 서울특별시 강남구 테헤란로 123</p>
+                        <p><strong>운영시간:</strong> 07:00 - 22:00</p>
+                        <p><strong>전화:</strong> 02-1234-5678</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <div class="location-image" data-image="images/store-hongdae.png" style="background: linear-gradient(45deg, #A0522D, #D2B48C); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                <div class="location-info">
+                    <h3 class="location-name">홍대점</h3>
+                    <div class="location-details">
+                        <p><strong>주소:</strong> 서울특별시 마포구 홍익로 456</p>
+                        <p><strong>운영시간:</strong> 08:00 - 24:00</p>
+                        <p><strong>전화:</strong> 02-8765-4321</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="locations.html" class="btn btn-primary">전체 매장 보기</a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="section" style="background: linear-gradient(135deg, var(--primary-brown), var(--secondary-brown)); color: white;">
+    <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: white; margin-bottom: 1rem;">뉴스레터 구독</h2>
+            <p style="opacity: 0.9; margin-bottom: 2rem;">새로운 메뉴와 이벤트 소식을 가장 빠르게 받아보세요</p>
+            
+            <form style="display: flex; gap: 1rem; max-width: 400px; margin: 0 auto;" action="#" method="post">
+                <input type="email" placeholder="이메일 주소를 입력하세요" 
+                       style="flex: 1; padding: 12px; border: none; border-radius: 25px; outline: none;">
+                <button type="submit" class="btn" style="background: white; color: var(--primary-brown); border-radius: 25px;">
+                    구독하기
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">J's Coffee</h3>
+                    <p class="footer-desc">정성스럽게 선별한 원두로<br>따뜻한 한 잔을 선사합니다.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">메뉴</h4>
+                    <ul class="footer-links">
+                        <li><a href="brand.html">브랜드소개</a></li>
+                        <li><a href="beans.html">원두이야기</a></li>
+                        <li><a href="menu.html">메뉴</a></li>
+                        <li><a href="locations.html">매장안내</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">고객센터</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">고객문의</a></li>
+                        <li><a href="event.html">이벤트</a></li>
+                        <li>대표번호: 1588-0000</li>
+                        <li>운영시간: 09:00 - 22:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">매장 정보</h4>
+                    <address class="footer-address">
+                        서울특별시 강남구 테헤란로 123<br>
+                        따뜻한빌딩 1-2층<br>
+                        사업자등록번호: 123-45-67890
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 J's Coffee. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">개인정보처리방침</a>
+                    <a href="#" class="legal-link">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html> 

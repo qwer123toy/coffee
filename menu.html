@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴 - J's Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">J's Coffee</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">홈</a></li>
+                    <li class="nav-item"><a href="brand.html" class="nav-link">브랜드소개</a></li>
+                    <li class="nav-item"><a href="beans.html" class="nav-link">원두이야기</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link active">메뉴</a></li>
+                    <li class="nav-item"><a href="locations.html" class="nav-link">매장안내</a></li>
+                    <li class="nav-item"><a href="event.html" class="nav-link">이벤트</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">고객문의</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">메뉴</h1>
+                <p class="section-subtitle">정성스럽게 만든 다양한 메뉴를 확인해보세요</p>
+                
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">전체</button>
+                    <button class="category-btn" data-category="coffee">커피</button>
+                    <button class="category-btn" data-category="beverage">음료</button>
+                    <button class="category-btn" data-category="dessert">디저트</button>
+                </div>
+                
+                <div class="menu-list">
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-image" data-image="images/americano.png" style="background: linear-gradient(135deg, #8B4513, #A0522D); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">아메리카노 <span class="menu-tag">BEST</span></h3>
+                            <p class="menu-description">깊고 진한 맛의 시그니처 아메리카노</p>
+                            <div class="menu-price">3,500원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-image" data-image="images/latte.png" style="background: linear-gradient(135deg, #D2B48C, #F5F5DC); display: flex; align-items: center; justify-content: center; color: #8B4513; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">카페라떼</h3>
+                            <p class="menu-description">부드러운 우유와 에스프레소의 완벽한 조화</p>
+                            <div class="menu-price">4,500원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-image" data-image="images/cappuccino.png" style="background: linear-gradient(135deg, #A0522D, #D2B48C); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">카푸치노</h3>
+                            <p class="menu-description">풍성한 거품과 함께 즐기는 클래식 커피</p>
+                            <div class="menu-price">4,800원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="coffee">
+                            <div class="menu-image" data-image="images/vanilla-latte.png" style="background: linear-gradient(135deg, #DEB887, #F5DEB3); display: flex; align-items: center; justify-content: center; color: #8B4513; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">바닐라 라떼 <span class="menu-tag">NEW</span></h3>
+                            <p class="menu-description">달콤한 바닐라 시럽이 들어간 인기 라떼</p>
+                            <div class="menu-price">5,200원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="beverage">
+                        <div class="menu-image" data-image="images/green-tea-latte.png" style="background: linear-gradient(135deg, #90EE90, #98FB98); display: flex; align-items: center; justify-content: center; color: #228B22; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">녹차라떼</h3>
+                            <p class="menu-description">진한 녹차와 부드러운 우유의 만남</p>
+                            <div class="menu-price">4,200원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="beverage">
+                        <div class="menu-image" data-image="images/hot-chocolate.png" style="background: linear-gradient(135deg, #8B4513, #654321); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">핫초콜릿</h3>
+                            <p class="menu-description">진한 초콜릿으로 만든 따뜻한 음료</p>
+                            <div class="menu-price">4,800원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="beverage">
+                        <div class="menu-image" data-image="images/fruit-ade.png" style="background: linear-gradient(135deg, #FF6347, #FFA500); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">과일에이드</h3>
+                            <p class="menu-description">신선한 과일로 만든 상큼한 에이드</p>
+                            <div class="menu-price">5,500원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="dessert">
+                        <div class="menu-image" data-image="images/croissant.png" style="background: linear-gradient(135deg, #DEB887, #F5DEB3); display: flex; align-items: center; justify-content: center; color: #8B4513; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">버터 크루아상</h3>
+                            <p class="menu-description">매일 아침 갓 구워내는 바삭한 크루아상</p>
+                            <div class="menu-price">3,200원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="dessert">
+                        <div class="menu-image" data-image="images/cheesecake.png" style="background: linear-gradient(135deg, #FFFACD, #F0E68C); display: flex; align-items: center; justify-content: center; color: #8B4513; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">치즈케이크</h3>
+                            <p class="menu-description">부드럽고 진한 뉴욕 스타일 치즈케이크</p>
+                            <div class="menu-price">6,800원</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="dessert">
+                        <div class="menu-image" data-image="images/blueberry-muffin.png" style="background: linear-gradient(135deg, #9370DB, #DDA0DD); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;"></div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">블루베리 머핀</h3>
+                            <p class="menu-description">신선한 블루베리가 들어간 촉촉한 머핀</p>
+                            <div class="menu-price">4,500원</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">J's Coffee</h3>
+                    <p class="footer-description">한 잔의 커피로 전하는 따뜻한 마음</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">메뉴</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="brand.html">브랜드소개</a></li>
+                        <li><a href="beans.html">원두이야기</a></li>
+                        <li><a href="menu.html">메뉴</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="locations.html">매장안내</a></li>
+                        <li><a href="event.html">이벤트</a></li>
+                        <li><a href="contact.html">고객문의</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 J's Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객문의 - J's Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">J's Coffee</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">홈</a></li>
+                    <li class="nav-item"><a href="brand.html" class="nav-link">브랜드소개</a></li>
+                    <li class="nav-item"><a href="beans.html" class="nav-link">원두이야기</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">메뉴</a></li>
+                    <li class="nav-item"><a href="locations.html" class="nav-link">매장안내</a></li>
+                    <li class="nav-item"><a href="event.html" class="nav-link">이벤트</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">고객문의</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <h1 class="page-title">고객문의</h1>
+                <p class="section-subtitle">궁금한 점이나 불편사항을 언제든지 말씀해주세요</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <span class="icon-text">CALL</span>
+                        </div>
+                        <h3 class="method-title">전화 문의</h3>
+                        <p class="method-description">빠른 상담이 필요하시다면 전화로 문의해주세요.</p>
+                        <div class="method-details">
+                            <p><strong>대표번호:</strong> 1588-0000</p>
+                            <p><strong>운영시간:</strong> 평일 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <span class="icon-text">MAIL</span>
+                        </div>
+                        <h3 class="method-title">이메일 문의</h3>
+                        <p class="method-description">자세한 내용을 첨부하여 이메일로 문의해주세요.</p>
+                        <div class="method-details">
+                            <p><strong>이메일:</strong> info@jscoffee.com</p>
+                            <p><strong>답변시간:</strong> 24시간 내 답변</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <span class="icon-text">CHAT</span>
+                        </div>
+                        <h3 class="method-title">카카오톡 문의</h3>
+                        <p class="method-description">실시간 채팅으로 편리하게 문의해주세요.</p>
+                        <div class="method-details">
+                            <p><strong>카카오톡:</strong> @JsCoffee</p>
+                            <p><strong>운영시간:</strong> 평일 10:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h2 class="section-title">온라인 문의</h2>
+                    <form class="contact-form" id="contactForm" action="contact" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">이름 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">연락처 *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">이메일 *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">문의 유형 *</label>
+                                <select id="category" name="category" required>
+                                    <option value="">선택해주세요</option>
+                                    <option value="menu">메뉴 문의</option>
+                                    <option value="store">매장 문의</option>
+                                    <option value="order">주문 문의</option>
+                                    <option value="complaint">불만/개선사항</option>
+                                    <option value="suggestion">제안사항</option>
+                                    <option value="other">기타</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">제목 *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">문의 내용 *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="문의하실 내용을 자세히 적어주세요."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">개인정보 수집 및 이용에 동의합니다. *</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="reset" class="btn-secondary">다시 작성</button>
+                            <button type="submit" class="btn-primary">문의하기</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="faq-section">
+                    <h2 class="section-title">자주 묻는 질문</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>배달 주문은 어떻게 하나요?</span>
+                                <span class="faq-toggle">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>배달앱(배달의민족, 요기요)을 통해 주문하실 수 있습니다. 
+                                또한 곧 출시될 J's Coffee 공식 앱에서도 배달 주문이 가능합니다.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>매장에서 원두 구매가 가능한가요?</span>
+                                <span class="faq-toggle">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>네, 모든 매장에서 원두 구매가 가능합니다. 
+                                특히 성수점에는 로스터리가 있어 갓 볶은 신선한 원두를 구매하실 수 있습니다.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>단체 예약이 가능한가요?</span>
+                                <span class="faq-toggle">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>강남점에 단체석이 마련되어 있어 10명 이상 단체 예약이 가능합니다. 
+                                최소 1일 전 예약 바랍니다. (전화: 02-1234-5678)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>할인 혜택이나 적립제도가 있나요?</span>
+                                <span class="faq-toggle">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>스탬프 적립제도(커피 10잔 구매 시 1잔 무료)와 개인 텀블러 지참 시 500원 할인 혜택이 있습니다. 
+                                또한 학생할인, 시즌 이벤트 등 다양한 혜택을 제공합니다.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>주차가 가능한가요?</span>
+                                <span class="faq-toggle">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>강남점에만 지하 주차장이 있으며, 2시간 무료 주차가 가능합니다. 
+                                다른 매장은 인근 공영주차장을 이용해주시기 바랍니다.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>와이파이 사용이 가능한가요?</span>
+                                <span class="faq-toggle">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>모든 매장에서 무료 와이파이를 제공합니다. 
+                                네트워크명: JsCoffee_Free, 비밀번호는 매장 직원에게 문의해주세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">J's Coffee</h3>
+                    <p class="footer-description">한 잔의 커피로 전하는 따뜻한 마음</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">메뉴</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="brand.html">브랜드소개</a></li>
+                        <li><a href="beans.html">원두이야기</a></li>
+                        <li><a href="menu.html">메뉴</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="locations.html">매장안내</a></li>
+                        <li><a href="event.html">이벤트</a></li>
+                        <li><a href="contact.html">고객문의</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 J's Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
